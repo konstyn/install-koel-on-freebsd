@@ -121,11 +121,12 @@ server {
 ```
 
 > git clone https://github.com/koel/koel.git  --recursive
+
 cd koel
 npm install
 nvim package.json
 
-удаляем всё связанное с cypress
+ в файле package.json удаляем всё связанное с cypress
 
 > composer install
 cat .env
