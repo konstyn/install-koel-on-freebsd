@@ -120,7 +120,7 @@ server {
 }
 ```
 
-> git clone https://github.com/koel/koel.git  --recursive
+> git clone https://github.com/koel/koel.git  --recursive <br>
 > cd koel
 > npm install
 > nvim package.json
