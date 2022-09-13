@@ -1,7 +1,7 @@
 ### Установка koel на FreeBSD
 
 
-> install nginx
+> install nginx <br>
 > install mariadb-server
 
 создаём базу: koel
@@ -121,14 +121,14 @@ server {
 ```
 
 > git clone https://github.com/koel/koel.git  --recursive <br>
-> cd koel
-> npm install
-> nvim package.json
+> cd koel <br>
+> npm install <br>
+> nvim package.json 
 
  в файле package.json удаляем всё связанное с cypress
 
-> composer install
-cat .env
+> composer install <br>
+> cat .env
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -139,18 +139,18 @@ DB_PASSWORD=koelkoel
 ```
 
 
-> mkdir ~/media
-php artisan koel:init --no-interaction
-php artisan serve --host 0.0.0.0
+> mkdir ~/media <br>
+> php artisan koel:init --no-interaction <br>
+> php artisan serve --host 0.0.0.0 <br>
 
 
 переносим настроенное приложение в каталог веб сервера
 перезапускаем службы
 
-> mv koel /usr/local/www/
-chown -R www:www /usr/local/www/koel
-service php-fpm restart
-service nginx restart
+> mv koel /usr/local/www/ <br>
+> chown -R www:www /usr/local/www/koel <br>
+> service php-fpm restart <br>
+> service nginx restart <br>
 
 cat /etc/crontab
 ```
